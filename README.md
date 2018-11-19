@@ -3,6 +3,8 @@ PHP &amp; MySql address book
 
 # File and folder structure
 
+```
+
 | assets
 | db
 | partials
@@ -15,6 +17,8 @@ PHP &amp; MySql address book
 | edit.php
 | delete.php
 | export.php
+
+```
 
 # How to use
 	1. Create a database and import the file located in db folder
