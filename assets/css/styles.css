@@ -30,16 +30,69 @@ header h1 {
 }
 
 /********************************************************
+ *********************** buttons ************************
+ ********************************************************/
+
+a.btn {
+	text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #666666;
+    color: #ffffff;
+    font-size: 10px;
+    display: inline-table;
+    padding: 7px 15px;
+}
+
+a.btn.btn--add {
+	background:#007bff;
+	margin-bottom:10px;
+}
+
+a.btn.btn--delete {
+	background:#d83531;
+	padding: 5px 15px;
+}
+ 
+a.btn.btn--edit {
+	background:#17a2b8;
+	padding: 5px 15px;
+}
+ 
+/********************************************************
  ********************** sections ************************
  ********************************************************/
 
 section {
-	width: 100%;
-	height:100px;
-	line-height:100px;
-	padding:30px;
+	width: 100%;   
 	box-sizing:border-box;
 }
+
+section.list {
+	padding: 35px 50px;
+}
+
+section.list table {
+	width:100%;
+}
+
+section.list table tr th {
+	background: #cccccc;
+	padding:5px 10px;
+	text-align:left;
+	font-weight: 500;
+}
+
+section.list table tr:nth-child(odd) td {
+	background: #eeeeee;
+}
+
+section.list table tr td {
+	padding:5px 10px;
+	text-align:left;
+	font-weight: 100;
+}
+
 
 /********************************************************
  ********************** footer **************************
