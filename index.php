@@ -14,7 +14,17 @@
 	
 	<h2>Address Book Entries<h2>
 	
+	<?php if(isset($_GET['delete']) && $_GET['delete'] == 'success'){ ?>
+		<h5 class="success">The entry was deleted</h5>
+	<?php } ?>
+
+	<?php if(isset($_GET['delete']) && $_GET['delete'] == 'error'){ ?>
+		<h5 class="error">The entry was not deleted</h5>
+	<?php } ?>
+	
 	<a href="<?php echo $base_url?>/add.php" class="btn btn--add">Add Entries</a>
+	
+	<a href="<?php echo $base_url?>/export.php" class="btn btn--export">Export</a>
 	
 	<?php
 		
@@ -52,6 +62,8 @@
 		} else {
 		    echo "<h4>There aren't any entries</h4>";
 		}
+		
+		/* disconnect from db */
 		
 		$db->close();
 	?>
